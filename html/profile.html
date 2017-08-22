@@ -1,0 +1,401 @@
+
+<html>
+  <head>
+    <title>Nice in - </title>
+    <style>* {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+  font-family: "PingFang SC", sans-serif;
+  height: 100%;
+  background-color: #fafafa;
+}
+body {
+  min-height: 100%;
+  min-height: 100vh;
+  font-size: 14px;
+  color: #A3A7AC;
+}
+ul li {
+  list-style: none;
+}
+a {
+  color: #A3A7AC;
+  text-decoration: none;
+}
+i,
+em {
+  font-style: normal;
+}
+.content-container {
+  width: 960px;
+  margin: 0 auto;
+}
+.page-header {
+  background-color: #fff;
+}
+.page-header > div {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.page-header .logo-wrapper {
+  padding-left: 70px;
+}
+.page-header nav {
+  display: flex;
+}
+.page-header nav a {
+  padding-right: 70px;
+  display: flex;
+  align-items: center;
+}
+.page-header nav a.on span {
+  color: #8796FF;
+  border-bottom: 2px solid #8796FF;
+}
+.page-footer {
+  background-color: #38383e;
+  padding: 50px 0;
+}
+.page-footer > section {
+  width: 960px;
+  margin: 0 auto;
+}
+.page-footer > section .columns {
+  display: flex;
+}
+.page-footer > section .columns > [class|=column] {
+  flex: 0 0 33.333%;
+  border-left: 1px solid rgba(255, 255, 255, 0.23);
+  text-align: center;
+}
+.page-footer > section .columns > [class|=column]:first-child {
+  border-left: 0;
+}
+.page-footer > section .columns .column-1 {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+.page-footer > section .columns .column-1 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 150px;
+}
+.page-footer > section .columns .column-1 ul li {
+  font-size: 10px;
+  width: 100px;
+  padding: 5px 0;
+}
+.page-footer > section .columns .column-1 ul li:nth-child(1),
+.page-footer > section .columns .column-1 ul li:nth-child(3) {
+  border: 1px solid rgba(255, 255, 255, 0.23);
+}
+.page-footer > section .columns .column-1 ul li:nth-child(2) {
+  background-color: #8796FF;
+  color: #fff;
+}
+.page-footer > section .columns .column-1 .qrc-wrapper {
+  width: 60%;
+}
+.page-footer > section .columns .column-1 .qrc-wrapper img {
+  width: 100%;
+}
+.page-footer > section .columns .column-2 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.page-footer > section .columns .column-2 > ul {
+  flex: 0 0 100%;
+  display: flex;
+}
+.page-footer > section .columns .column-2 > ul > li {
+  flex: 0 0 33.333%;
+}
+.page-footer > section .columns .column-2 > ul:first-child {
+  font-size: 16px;
+  color: #fff;
+}
+.page-footer > section .columns .column-3 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.page-footer > section .columns .column-3 p {
+  flex: 0 0 100%;
+}
+.page-footer > section .columns .column-3 p:first-child {
+  font-size: 16px;
+  color: #fff;
+}
+.page-footer .partners {
+  padding-top: 40px;
+  display: flex;
+  align-items: flex-start;
+}
+.page-footer .partners > * {
+  padding-right: 20px;
+}
+.page-footer .partners img {
+  height: 30px;
+}
+.page-footer .partners img + div {
+  font-size: 10px;
+  text-align: center;
+}
+.page-footer .copy-right {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 10px;
+}
+
+      .profile-location {
+  padding: 10px;
+  display: flex;
+  font-size: 12px;
+  background-color: #fafafa;
+}
+.profile-location > * {
+  padding-right: 8px;
+}
+.profile-nav {
+  display: flex;
+  background-color: #fff;
+  padding: 15px 0;
+}
+.profile-nav a {
+  flex: 25%;
+  text-align: center;
+  border-left: 1px solid #A3A7AC;
+}
+.profile-nav a:first-child {
+  border-left: 0;
+}
+.profile-nav a span {
+  font-size: 15px;
+}
+.profile-nav a.on span {
+  color: #8796FF;
+}
+      .profile-container {
+  background-color: #fff;
+}
+.profile-container .profile-banner {
+  width: 100%;
+  height: 352px;
+  background-image: url(/img/profile-1.png);
+  background-repeat: no-repeat;
+}
+.profile-container .our-life,
+.profile-container .tea {
+  padding-top: 70px;
+}
+.profile-container .our-life h4,
+.profile-container .tea h4 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: normal;
+  color: #404245;
+}
+.profile-container .our-life h6,
+.profile-container .tea h6 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  color: #404245;
+}
+.profile-container .our-life ul {
+  padding: 70px 130px 0 130px;
+  overflow: hidden;
+}
+.profile-container .our-life ul li {
+  float: left;
+  width: 350px;
+  height: 280px;
+}
+.profile-container .our-life ul > :first-child {
+  background-image: url(/img/ourlife-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.profile-container .our-life ul > :nth-child(2),
+.profile-container .our-life ul > :nth-child(3) {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+}
+.profile-container .our-life ul > :nth-child(2) section > :nth-child(1),
+.profile-container .our-life ul > :nth-child(3) section > :nth-child(1) {
+  height: 30px;
+  background-image: url(/img/ourlife-3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.profile-container .our-life ul > :nth-child(2) section > :nth-child(2),
+.profile-container .our-life ul > :nth-child(3) section > :nth-child(2) {
+  padding-top: 10px;
+  font-size: 22px;
+  color: #55595F;
+}
+.profile-container .our-life ul > :nth-child(2) section > :nth-child(3),
+.profile-container .our-life ul > :nth-child(3) section > :nth-child(3) {
+  padding-top: 10px;
+  color: #55595F;
+}
+.profile-container .our-life ul > :nth-child(3) section > :nth-child(1) {
+  background-image: url(/img/ourlife-4.png);
+}
+.profile-container .our-life ul > :nth-child(4) {
+  background-image: url(/img/ourlife-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.profile-container .tea .tea-banner {
+  padding: 70px 130px 0;
+}
+.profile-container .tea .tea-banner img {
+  width: 100%;
+}
+.profile-container .join-us {
+  text-align: center;
+  padding: 70px 0;
+  color: #250000;
+  font-size: 16px;
+  line-height: 25px;
+}
+.profile-container .join-us a {
+  color: #8796FF;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="layout-container">
+      <header class="page-header">
+        <div><a class="logo-wrapper" href="#"><img src="/img/logo.png"/></a>
+          <nav><a href="#"> <span>首页</span></a><a href="#"> <span>产品服务</span></a><a href="#"> <span>品牌介绍</span></a><a class="on" href="#"> <span>关于我们</span></a></nav>
+        </div>
+      </header>
+      <div class="content-container">
+        <div class="profile-container">
+          <div class="profile-location"><span>关于我们</span><em>&gt;</em><span>公司简介</span></div>
+          <div class="profile-nav"><a class="item on" href="profile.html"><span>公司简介</span></a><a class="item" href="history.html"><span>企业历程</span></a><a class="item" href="team.html"><span>团队资料</span></a><a class="item" href="contactus.html"><span>联系我们</span></a></div>
+          <div class="profile-banner"></div>
+          <div class="our-life">
+            <h4>我们的生活</h4>
+            <h6>工作一隅</h6>
+            <ul>
+              <li></li>
+              <li>
+                <section>
+                  <div></div>
+                  <div>知识讲座沙龙</div>
+                  <div>撇开心防，和女朋友们的亲密接触</div>
+                </section>
+              </li>
+              <li>
+                <section>
+                  <div></div>
+                  <div>旅游团建</div>
+                  <div>Work hard，play hard！</div>
+                </section>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="tea">
+            <h4>轻松下午茶</h4>
+            <h6>喜欢的食物和喜欢的人一起分享</h6>
+            <div class="tea-banner"><img src="/img/tea.png"/></div>
+          </div>
+          <div class="join-us">
+            <p>赶快加入我们吧！</p>
+            <p>让我们看到你的才华：<a type="mail" href="mailto:hr@niceinapp.com">hr@niceinapp.com</a></p>
+          </div>
+        </div>
+      </div>
+      <footer class="page-footer">
+        <section>
+          <div class="columns">
+            <div class="column-1">
+              <ul>
+                <li>下载Nice in app</li>
+                <li>关注微信公众号</li>
+                <li>关注尺码助手</li>
+              </ul>
+              <div class="qrc-wrapper"><img src="/img/qrc-bg.png"/></div>
+            </div>
+            <div class="column-2">
+              <ul>
+                <li>产品服务</li>
+                <li>品牌介绍</li>
+                <li>关于我们</li>
+              </ul>
+              <ul>
+                <li>线上产品</li>
+                <li>自有品牌</li>
+                <li>公司简介</li>
+              </ul>
+              <ul>
+                <li>我们的服务</li>
+                <li>产品展示</li>
+                <li>发展历程</li>
+              </ul>
+              <ul>
+                <li>线下门店</li>
+                <li>代理品牌</li>
+                <li>团队介绍</li>
+              </ul>
+              <ul>
+                <li> </li>
+                <li> </li>
+                <li>联系我们</li>
+              </ul>
+            </div>
+            <div class="column-3">
+              <p>深圳市蜜豆生物科技有限公司</p>
+              <p>公司地址：深圳市南山区华富洋大厦</p>
+              <p>联系我们：0755-26530336</p>
+              <p>商务合作：bd@niceinapp.com</p>
+            </div>
+          </div>
+          <div class="partners">
+            <p>合作伙伴</p>
+            <div> <img src="/img/partner-1.png"/>
+              <div>京东</div>
+            </div>
+            <div> <img src="/img/partner-2.png"/>
+              <div>天涯社区</div>
+            </div>
+            <div> <img src="/img/partner-3.png"/>
+              <div>护你妹</div>
+            </div>
+            <div> <img src="/img/partner-4.png"/>
+              <div>想你</div>
+            </div>
+            <div> <img src="/img/partner-5.png"/>
+              <div> </div>
+            </div>
+            <div> <img src="/img/partner-6.png"/>
+              <div> </div>
+            </div>
+          </div>
+          <div class="copy-right">© 2016 深圳市蜜豆生物高科技有限公司, All Rights Reserved 粤ICP备14089857号-2</div>
+        </section>
+      </footer>
+    </div>
+  </body>
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</html>

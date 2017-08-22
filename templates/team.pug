@@ -1,0 +1,27 @@
+extends layout/main.pug
+
+append scripts
+  script(type="text/javascript" src="/js/team.js")
+append styles
+  include:less ../less/includes/profileNav.less
+  include:less ../less/team.less
+  
+  
+block content
+  .team-container
+    include ./includes/profileNav.pug  
+    h2 团队介绍
+    ul.team-list
+      each val, index in team.members 
+        li
+          img(src=config.imgDir + '/team-normal-' + val.img + '.png')
+          div= val.name
+          p= val.title
+block insertVariable
+  - pageNameEn = 'team'
+  - pageNameZh = '团队资料'
+  
+  
+    
+
+  

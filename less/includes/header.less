@@ -1,0 +1,30 @@
+@import "../common/variables.less";
+
+.page-header{
+  background-color: #fff;
+  > div{
+    width: @page-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+
+  }
+
+  .logo-wrapper{
+    padding-left: 70px;
+  }
+  nav{
+    display: flex;
+    a{
+      padding-right: 70px;
+      display: flex;
+      align-items: center;
+      &.on{
+        span{
+          color: @color-blue;
+          border-bottom: 2px solid @color-blue;
+        }
+      }
+    }
+  }
+}

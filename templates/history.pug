@@ -1,0 +1,47 @@
+extends layout/main.pug
+
+append scripts
+  
+append styles
+  include:less ../less/includes/profileNav.less
+  include:less ../less/history.less
+  
+  
+block content
+  .history-container
+    include ./includes/profileNav.pug
+    .cloud-wrapper
+      img(src=config.imgDir + '/cloud.png')
+    .history-nodes
+      each val, index in history.nodes
+        if index % 2 == 0
+          .node-item
+            .column-1
+            .column-2
+              span
+              p
+              span
+            .column-3
+              p= val.time
+              div= val.title
+              p= val.detail
+        else 
+          .node-item
+            .column-1
+              p= val.time
+              div= val.title
+              p= val.detail
+            .column-2
+              span
+              p
+              span
+            .column-3
+    
+block insertVariable
+  - pageNameEn = 'history'
+  - pageNameZh = '公司历程'
+  
+  
+    
+
+  

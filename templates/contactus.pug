@@ -1,0 +1,40 @@
+extends layout/main.pug
+
+append scripts
+  script(type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=700b132845ef5b0b135066dfa0222a37")
+  script(type="text/javascript" src="/js/contactus.js")
+append styles
+  include:less ../less/includes/profileNav.less
+  include:less ../less/contactus.less
+  
+  
+block content
+  .contactus-container
+    include ./includes/profileNav.pug  
+    h2 联系我们
+    .company-address
+      .info
+        div 深圳市蜜豆生物科技有限公司
+        p Shenzhen Midou Biological High-Tech Co. Ltd
+        ul
+          li
+            img(src=config.imgDir + '/icon-building.png')
+            p 商务合作：bd@niceinapp.com
+          li
+            img(src=config.imgDir + '/icon-building.png')
+            p 简历投递：hr@niceinapp.com
+          li
+            img(src=config.imgDir + '/icon-building.png')
+            p 公司地址：深圳市南山区华富洋大厦
+          li
+            img(src=config.imgDir + '/icon-building.png')
+            p 联系客服：0755-26530336
+      .map-wraper#map-wrapper
+block insertVariable
+  - pageNameEn = 'contactus'
+  - pageNameZh = '联系我们'
+  
+  
+    
+
+  

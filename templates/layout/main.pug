@@ -1,0 +1,18 @@
+block insertVariable
+html
+  head
+    title Nice in - #{profile.title}
+    style
+      include:less ../../less/common/common.less
+      block styles
+    
+    
+  body
+    .layout-container
+      include ../includes/header.pug
+      div.content-container
+        block content
+      include ../includes/footer.pug
+  
+  block scripts
+    script(src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js')

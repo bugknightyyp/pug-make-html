@@ -1,0 +1,100 @@
+{
+  "config": {
+    "imgDir": "/img"
+  },
+  "profile": {
+  },
+  "history": {
+    "nodes": [
+      {
+        "time": "2016-01",
+        "title": "Nice in 成立",
+        "detail": "业内第一家联通上游供应商的大内衣销售平台"
+      },
+      {
+        "time": "2016-03",
+        "title": "Nice in APP1.0版本发布",
+        "detail": ""
+      },
+      {
+        "time": "2016-05",
+        "title": "业内第一家联通上游供应商的大内衣销售平台",
+        "detail": ""
+      },
+      {
+        "time": "2016-06",
+        "title": "获得百万天使轮融资",
+        "detail": "融资机构：投资方为专业的女性经济投资机构红秀资本，以及腾讯大数据平台缔造者蔡川"
+      },
+      {
+        "time": "2016-08",
+        "title": "Nice in视频购物上线，提供真人全码试穿效果",
+        "detail": "首个提供真人全码试穿效果购物指导的内衣平台"
+      },
+      {
+        "time": "2016-10",
+        "title": "尺码工具上线",
+        "detail": "应用专业的19个数据维度为用户线上判断精准尺码"
+      },
+      {
+        "time": "2017-01",
+        "title": "Nice in小程序上线",
+        "detail": "试水线上线下新零售模式"
+      },
+      {
+        "time": "2017-04",
+        "title": "第一家Nice in品牌集合店于深圳开业",
+        "detail": ""
+      },
+      {
+        "time": "2017-05",
+        "title": "Nice in fit小程序上线",
+        "detail": ""
+      }
+    ]
+  },
+  "team": {
+    "members": [
+      {
+        "img": 1,
+        "name": "谢航",
+        "title": "创始人兼CEO"
+      },
+      {
+        "img": 1,
+        "name": "谢航",
+        "title": "创始人兼CEO"
+      },
+      {
+        "img": 1,
+        "name": "谢航",
+        "title": "创始人兼CEO"
+      },
+      {
+        "img": 1,
+        "name": "谢航",
+        "title": "创始人兼CEO"
+      },
+      {
+        "img": 1,
+        "name": "谢航",
+        "title": "创始人兼CEO"
+      },
+      {
+        "img": 1,
+        "name": "谢航",
+        "title": "创始人兼CEO"
+      },
+      {
+        "img": 1,
+        "name": "谢航",
+        "title": "创始人兼CEO"
+      },
+      {
+        "img": 1,
+        "name": "谢航",
+        "title": "创始人兼CEO"
+      }
+    ]
+  }
+}

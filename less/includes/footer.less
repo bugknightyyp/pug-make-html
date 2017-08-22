@@ -1,0 +1,100 @@
+@import "../common/variables.less";
+.page-footer{
+  background-color: #38383e;
+  padding: 50px 0;
+  >section{
+    width: @page-width;
+    margin: 0 auto;
+
+    .columns{
+      display: flex;
+      >[class|=column]{
+        flex: 0 0 33.333%;
+        border-left: 1px solid rgba(255, 255, 255, .23);
+        text-align: center;
+        &:first-child{
+          border-left: 0;
+        }
+      }
+      .column-1{
+        display: flex;
+        align-items: center;
+        padding: 0 40px;
+        ul{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 40%;
+          height: 150px;
+          li{
+            font-size: 10px;
+            width: 100px;
+            padding: 5px 0;
+          }
+          li:nth-child(1),li:nth-child(3){
+            border: 1px solid rgba(255, 255, 255, .23);
+          }
+          li:nth-child(2){
+            background-color: @color-blue;
+            color: #fff;
+          }
+        }
+        .qrc-wrapper{
+          width: 60%;
+          img{
+            width: 100%;
+          }
+        }
+      }
+      .column-2{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        > ul{
+          flex: 0 0 100%;
+          display: flex;
+          >li{
+            flex: 0 0 33.333%;
+          }
+          &:first-child{
+            font-size: 16px;
+            color: #fff;
+          }
+        }
+      }
+      .column-3{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        p{
+          flex: 0 0 100%;
+          &:first-child{
+            font-size: 16px;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+  }
+  .partners{
+    padding-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    > *{
+      padding-right: 20px;
+    }
+    img{
+      height: 30px;
+      + div{
+        font-size: 10px;
+        text-align: center;
+      }
+    }
+  }
+  .copy-right{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 10px;
+  }
+}

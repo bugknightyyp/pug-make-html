@@ -1,0 +1,101 @@
+@import "common/variables.less";
+
+.profile-container{
+  background-color: #fff;
+  .profile-banner{
+    width: 100%;
+    height: 352px;
+    background-image: ~"url(@{img-dir}/profile-1.png)";
+    background-repeat: no-repeat;
+  }
+  .our-life,.tea{
+    padding-top: 70px;
+    h4{
+      text-align: center;
+      font-size: 28px;
+      font-weight: normal;
+      color: #404245;
+    }
+    h6{
+      text-align: center;
+      font-size: 18px;
+      font-weight: normal;
+      color: #404245;
+    }
+  }
+  .our-life{
+    ul{
+      padding: 70px 130px 0 130px;
+      overflow: hidden;
+      li{
+        float: left;
+        width: (960 - 130 * 2)/2px;
+        height: (960 - 200 * 2)/2px;
+
+      }
+      >:first-child{
+        background-image: ~"url(@{img-dir}/ourlife-1.png)";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      >:nth-child(2),>:nth-child(3){
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: @page-background-color;
+        section{
+          >:nth-child(1){
+            height: 30px;
+            background-image: ~"url(@{img-dir}/ourlife-3.png)";
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+          }
+          >:nth-child(2){
+            padding-top: 10px;
+            font-size: 22px;
+            color:  #55595F;
+          }
+          >:nth-child(3){
+            padding-top: 10px;
+            color:  #55595F;
+          }
+        }
+      }
+      >:nth-child(3){
+        section{
+          >:nth-child(1){
+            background-image: ~"url(@{img-dir}/ourlife-4.png)";
+          }
+        }
+
+      }
+      >:nth-child(4){
+        background-image: ~"url(@{img-dir}/ourlife-2.png)";
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  .tea{
+    .tea-banner{
+      padding: 70px 130px 0;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .join-us{
+    text-align: center;
+    padding: 70px 0;
+    color: #250000;
+    font-size: 16px;
+    line-height: 25px;
+    a{
+      color: @color-blue;
+    }
+  }
+}

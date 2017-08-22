@@ -1,0 +1,14 @@
+header(class="page-header")
+  div
+    a(class="logo-wrapper" href="#")
+      img(src=`${config.imgDir}/logo.png`)
+    nav
+      a(href="#") 
+        span 首页
+      a(href="#") 
+        span 产品服务
+      a(href="#") 
+        span 品牌介绍
+      a(href="#" class={on: pageNameEn === 'profile' || pageNameEn === 'history'  || pageNameEn === 'team'   || pageNameEn === 'contactus'}) 
+        span 关于我们
+  

@@ -1,0 +1,32 @@
+@import "../common/variables.less";
+.profile-location{
+  padding: 10px;
+  display: flex;
+  font-size: 12px;
+  background-color: @page-background-color;
+  > *{
+    padding-right: 8px;
+  }
+}
+.profile-nav{
+  display: flex;
+  background-color: #fff;
+  padding: 15px 0;
+  a{
+    flex: 25%;
+    text-align: center;
+    border-left: 1px solid #A3A7AC;
+    &:first-child{
+      border-left: 0;
+    }
+    span{
+      font-size: 15px;
+
+    }
+    &.on{
+      span{
+        color: @color-blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+extends layout/main.pug
+
+append scripts
+  
+append styles
+  include:less ../less/includes/profileNav.less
+  include:less ../less/profile.less
+  
+  
+block content
+  .profile-container
+    include ./includes/profileNav.pug
+    .profile-banner
+    .our-life
+      h4 我们的生活
+      h6 工作一隅
+      ul
+        li
+        li
+          section
+            div
+            div 知识讲座沙龙
+            div 撇开心防，和女朋友们的亲密接触
+        li
+          section
+            div
+            div 旅游团建
+            div Work hard，play hard！
+        li
+    .tea
+      h4 轻松下午茶
+      h6 喜欢的食物和喜欢的人一起分享
+      .tea-banner
+        img(src=config.imgDir + '/tea.png')
+    .join-us
+      p 赶快加入我们吧！
+      p 让我们看到你的才华：
+        a(type="mail" href="mailto:hr@niceinapp.com") hr@niceinapp.com
+    
+block insertVariable
+  - pageNameEn = 'profile'
+  - pageNameZh = '公司简介'
+  
+    
+
+  
